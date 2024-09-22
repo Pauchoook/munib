@@ -1,0 +1,92 @@
+.modal-detail {
+  &__body {
+    padding: 40px 45px;
+    @include tablet {
+      padding: 30px;
+    }
+    @include tablet-min {
+      padding: 20px;
+    }
+  }
+  &__head {
+    @include flex-between;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  &__title {
+    font-weight: 400;
+    font-size: 26px;
+    opacity: 0.83;
+    margin: 0;
+  }
+  &__specifications {
+    max-width: 540px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  &__services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    row-gap: 50px;
+    @include tablet {
+      row-gap: 25px;
+    }
+  }
+  &__services-item {
+    flex: 0 1 calc(33% - 15px);
+    @include laptop-min {
+      flex-basis: calc(50% - 13px);
+    }
+    @include mobile {
+      flex-basis: 100%;
+    }
+  }
+  &__services-title {
+    font-size: 16px;
+    opacity: 0.8;
+    margin: 0px 0px 15px 0px;
+  }
+  &__services-list {
+    list-style: disc;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-left: 20px;
+  }
+  &__services-row-item {
+    font-weight: 300;
+    opacity: 0.75;
+    font-size: 16px;
+  }
+  &__footer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 55px;
+    background-color: var(--vista);
+    padding: 33px 45px;
+    @include tablet {
+      gap: 25px;
+    }
+  }
+  &__price {
+    font-size: 28px;
+    font-family: "ViaodaLibre", sans-serif;
+    @include laptop-min {
+      font-size: 24px;
+    }
+    @include tablet {
+      font-size: 22px;
+    }
+  }
+  &__btn {
+    max-width: 170px;
+    width: 100%;
+    @include mobile {
+      max-width: none;
+    }
+  }
+}

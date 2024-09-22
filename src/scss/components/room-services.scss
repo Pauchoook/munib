@@ -1,0 +1,62 @@
+.room-services {
+  padding: 80px 0px;
+  background-color: var(--alabaster);
+  @include tablet {
+    padding: 60px 0px;
+  }
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    @include laptop {
+      gap: 24px;
+    }
+    @include tablet-min {
+      gap: 16px;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    flex: 0 1 calc(33% - 20px);
+    gap: 22px;
+    @include laptop {
+      flex-basis: calc(33% - 14px)
+    }
+    @include laptop-min {
+      flex-basis: calc(50% - 12px)
+    }
+    @include tablet-min {
+      flex-basis: 100%
+    }
+  }
+  &__item-rect {
+    @include flex-center;
+    width: 53px;
+    height: 53px;
+    flex-shrink: 0;
+    background-color: var(--primary);
+    @include tablet {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  &__content {
+    font-weight: 300;
+    font-size: 22px;
+    opacity: 0.83;
+    max-width: 315px;
+    @include laptop {
+      font-size: 20px;
+    }
+    @include laptop-min {
+      max-width: none;
+    }
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+}

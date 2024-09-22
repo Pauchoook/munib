@@ -1,0 +1,94 @@
+.modal {
+  --bg-overlay: rgba(0, 0, 0, 0.5);
+  --bg-overlay-hide: rgba(0, 0, 0, 0);
+  &.open {
+    .modal__overlay,
+    .modal__window {
+      opacity: 1;
+      z-index: 1000;
+    }
+    .modal__overlay {
+      background-color: var(--bg-overlay);
+      overflow-y: auto;
+    }
+    .modal__window {
+      transform: translateY(0) scale(1);
+    }
+  }
+  &.hide {
+    .modal__overlay,
+    .modal__window {
+      opacity: 1;
+      z-index: 1000;
+    }
+    .modal__overlay {
+      background-color: var(--bg-overlay-hide);
+    }
+    .modal__window {
+      transform: translateY(-100px) scale(0);
+    }
+  }
+  &__overlay,
+  &__window {
+    opacity: 0;
+    z-index: -10;
+  }
+  &__overlay {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+    inset: 0;
+    background-color: var(--bg-overlay);
+    transition: background-color 0.5s ease;
+    &::-webkit-scrollbar {
+      height: 0;
+      width: 0;
+      display: none;
+    }
+  }
+  &__window {
+    position: relative;
+    transform: translateY(-100px) scale(0);
+    opacity: 0;
+    box-shadow: 0 42px 36px -16px rgba(0, 0, 0, 0.25);
+    height: fit-content;
+    max-width: 915px;
+    width: 100%;
+    margin-top: 50px;
+    background-color: white;
+    transition:
+      transform 0.4s ease,
+      opacity 0.2s ease;
+    @include laptop-min {
+      max-width: calc(100% - 30px)
+    }
+  }
+  &__head {
+    @include flex-between;
+    margin-bottom: 40px;
+  }
+  &__close {
+    @include flex-center;
+    position: relative;
+    width: 23px;
+    height: 23px;
+    color: var(--scorpion);
+    transition: color 0.2s ease;
+    @include hover {
+      color: var(--primary);
+    }
+    span {
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: currentColor;
+      &:first-child {
+        transform: rotate(45deg);
+      }
+      &:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}

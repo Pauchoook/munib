@@ -1,0 +1,95 @@
+.other-rooms {
+  padding: 80px 0px;
+  @include tablet {
+    padding: 60px 0px;
+  }
+  &__title {
+    margin-bottom: 40px;
+    @include tablet {
+      margin-bottom: 25px;
+    }
+  }
+  &__slider {
+  }
+  &__slide {
+    display: flex !important;
+    flex-direction: column;
+    height: auto !important;
+    @include hover {
+      .other-rooms__slide-btn {
+        color: var(--primary);
+      }
+      .other-rooms__slide-arrow {
+        transform: translateX(5px);
+      }
+    }
+  }
+  &__slide-img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+    margin-bottom: 25px;
+    @include laptop {
+      height: 300px;
+    }
+    @include tablet {
+      margin-bottom: 15px;
+    }
+  }
+  &__slide-title {
+    font-weight: 400;
+    font-size: 22px;
+    color: var(--mine-shaft);
+    margin: 0px 0px 15px 0px;
+  }
+  &__list {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 25px;
+    row-gap: 15px;
+    margin-bottom: 15px;
+    flex: 1;
+    @include tablet {
+      gap: 10px;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 300;
+    font-size: 13px;
+    flex: 0 1 calc(50% - 13px);
+    @include tablet {
+      flex-basis: auto;
+      min-width: 105px;
+    }
+    span {
+      opacity: 0.83;
+    }
+  }
+  &__item-rect {
+    @include flex-center;
+    width: 33px;
+    height: 33px;
+    background-color: var(--primary);
+    flex-shrink: 0;
+  }
+  &__slide-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 147%;
+    color: var(--cod-gray);
+    transition: color .2s ease;
+  }
+  &__slide-arrow {
+    width: 11px;
+    height: 9px;
+    transition: transform .2s ease;
+  }
+}

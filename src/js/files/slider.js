@@ -1,7 +1,8 @@
 import Swiper from "swiper";
-import { Autoplay, Scrollbar, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Scrollbar, Navigation, Pagination, EffectFade } from "swiper/modules";
 
 import "swiper/css";
+import "swiper/css/effect-fade";
 
 export default function slider() {
   const aboutSlider = document.querySelector(".about__slider");
@@ -25,9 +26,9 @@ export default function slider() {
     });
   }
 
-  const ourRoomsSliders = document.querySelectorAll(".our-rooms__slider");
-  if (ourRoomsSliders.length) {
-    ourRoomsSliders.forEach((slider) => {
+  const roomSliders = document.querySelectorAll(".room-slider");
+  if (roomSliders.length) {
+    roomSliders.forEach((slider) => {
       const swiper = new Swiper(slider, {
         speed: 700,
         modules: [Autoplay, Navigation, Pagination],
@@ -35,11 +36,11 @@ export default function slider() {
         grabCursor: true,
         spaceBetween: 15,
         navigation: {
-          prevEl: ".our-rooms .slider-nav__btn--prev",
-          nextEl: ".our-rooms .slider-nav__btn--next",
+          prevEl: slider.querySelector(".slider-nav__btn--prev"),
+          nextEl: slider.querySelector(".slider-nav__btn--next"),
         },
         pagination: {
-          el: ".our-rooms .slider-pag",
+          el: slider.querySelector(".slider-pag"),
           clickable: true,
         },
       });
@@ -51,7 +52,9 @@ export default function slider() {
     const swiper = new Swiper(offersSlider, {
       speed: 700,
       modules: [Autoplay, Navigation],
-      autoplay: true,
+      autoplay: {
+        delay: 3000,
+      },
       grabCursor: true,
       spaceBetween: 20,
       slidesPerView: 2,
@@ -67,8 +70,57 @@ export default function slider() {
         744: {
           spaceBetween: 25,
           slidesPerView: 3,
-        }
-      }
+        },
+      },
+    });
+  }
+
+  const otherRoomsSlider = document.querySelector(".other-rooms__slider");
+  if (otherRoomsSlider) {
+    const swiper = new Swiper(otherRoomsSlider, {
+      speed: 700,
+      modules: [Autoplay, Navigation],
+      grabCursor: true,
+      spaceBetween: 16,
+      slidesPerView: 1,
+      autoplay: {
+        delay: 3000,
+      },
+      breakpoints: {
+        993: {
+          slidesPerView: 4,
+          spaceBetween: 24,
+        },
+        744: {
+          spaceBetween: 20,
+          slidesPerView: 3,
+        },
+        450: {
+          spaceBetween: 16,
+          slidesPerView: 2,
+        },
+      },
+    });
+  }
+
+  const heroSlider = document.querySelector(".hero__slider");
+  if (heroSlider) {
+    const swiper = new Swiper(heroSlider, {
+      speed: 700,
+      modules: [Autoplay, Navigation, EffectFade, Pagination],
+      effect: "fade",
+      fadeEffect: { crossFade: true },
+      autoplay: {
+        delay: 3000,
+      },
+      navigation: {
+        prevEl: ".hero .slider-nav__btn--prev",
+        nextEl: ".hero .slider-nav__btn--next",
+      },
+      pagination: {
+        el: ".hero .slider-pag",
+        clickable: true,
+      },
     });
   }
 }

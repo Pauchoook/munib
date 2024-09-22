@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>pauchoo0k</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240923013442">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="body">
+	<header class="header">
+		<div class="header__top">
+			<div class="container header__container-top">
+				<ul data-da=".header__nav, 992, 2" class="list header__social">
+					<li>
+						<a href="#" target="_blank" class="header__social-btn">
+							<svg class="header__social-icon">
+								<use xlink:href="img/icons/icons.svg#icon-vk"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" target="_blank" class="header__social-btn">
+							<svg class="header__social-icon">
+								<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+							</svg>
+						</a>
+					</li>
+					<li>
+						<a href="#" target="_blank" class="header__social-btn">
+							<svg class="header__social-icon">
+								<use xlink:href="img/icons/icons.svg#icon-tg"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+				<ul data-da=".header__nav, 992, 3" class="list header__contacts">
+					<li class="header__contacts-item">г. Казань, ул. Пушкина, д. 7</li>
+					<li class="header__contacts-item">
+						<a href="tel:+79179999999">+7 (917) 999-99-99</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="container header__container">
+			<nav data-spollers="993,max" data-one-spoller class="header__nav" id="burger">
+				<button class="btn header__burger-close" id="burger-close">
+					<div class="header__burger-close-wrapper">
+						<span></span>
+						<span></span>
+					</div>
+				</button>
+				<div class="header__nav-wrapper">
+					<ul class="list header__list">
+						<li>
+							<a href="#">Номера</a>
+						</li>
+						<li class="dropdown dropdown--spoller">
+							<button data-spoller class="btn dropdown__btn">
+								<a href="#">Услуги</a>
+								<svg class="dropdown__arrow">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</button>
+							<div class="dropdown__item">
+								<ul class="list header__sublist">
+									<li>
+										<a href="#">Меню какое то трололо</a>
+									</li>
+									<li>
+										<a href="#">Меню какое то трололо</a>
+									</li>
+									<li>
+										<a href="#">Меню какое то трололо</a>
+									</li>
+									<li>
+										<a href="#">Меню какое то трололо</a>
+									</li>
+									<li>
+										<a href="#">Меню какое то трололо</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#">Специальные предложения</a>
+						</li>
+					</ul>
+					<a data-da=".header__container, 992, 0" href="/" class="header__logo">
+						<img src="img/logo.svg" alt="logo" class="header__logo-img" />
+					</a>
+					<ul class="list header__list">
+						<li>
+							<a href="#">О нас</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+					<a href="#" class="btn-custom btn-custom--stroke header__btn">
+						<span>Забронировать</span>
+						<svg class="btn-custom__arrow">
+							<use xlink:href="img/icons/icons.svg#icon-arrow-line"></use>
+						</svg>
+					</a>
+				</div>
+			</nav>
+			<button class="btn header__burger-btn" id="burger-open">
+				<span></span>
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</header>
+
+	<main>
+
+		<section class="hero" style="background: url(&quot;img/detail.webp&quot;) 0 0 / cover no-repeat">
+			<div class="container">
+				<h1 class="title title-1 hero__title">Standart</h1>
+				<p class="hero__content">Остановитесь в одном из наших ярких комфортабельных номеров</p>
+				<div class="hero__nav">
+					<div class="hero__nav-items">
+						<label for="date-llegada" class="hero__nav-item">
+							<input type="date" id="date-llegada" class="hero__nav-input-date" />
+							<span class="hero__nav-title"> Дата заезда </span>
+							<div class="hero__item-bottom">
+								<span class="title-1 hero__nav-value" id="value-llegada">26<span>/мая</span></span>
+								<svg class="hero__nav-arrow">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</div>
+						</label>
+						<label for="date-salida" class="hero__nav-item">
+							<input type="date" id="date-salida" class="hero__nav-input-date" />
+							<span class="hero__nav-title"> Дата выезда</span>
+							<div class="hero__item-bottom">
+								<span class="title-1 hero__nav-value" id="value-salida">27<span>/мая</span></span>
+								<svg class="hero__nav-arrow">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</div>
+						</label>
+						<label for="date-guests" class="hero__nav-item">
+							<span class="hero__nav-title">Количество гостей</span>
+							<div class="hero__item-bottom">
+								<input type="number" value="3" id="date-guests" class="title-1 hero__nav-value hero__nav-value--input" />
+								<svg class="hero__nav-arrow">
+									<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+								</svg>
+							</div>
+						</label>
+					</div>
+					<div class="hero__promo">
+						<div class="hero__promo-info">
+							<span class="hero__promo-title"> У вас есть промокод? </span>
+							<a href="/reserva" class="btn-custom btn-custom--primary hero__promo-btn" id="reserva-btn">
+								<span>Забронировать</span>
+								<svg class="btn-custom__arrow">
+									<use xlink:href="img/icons/icons.svg#icon-arrow-line"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about-room">
+			<div class="container">
+				<h2 class="title title-2 about-room__title">О номере</h2>
+				<div class="about-room__body">
+					<div class="about-room__info">
+						<p class="content about-room__content">
+							Сложно сказать, почему акционеры крупнейших компаний описаны максимально подробно.
+							Банальные, но неопровержимые выводы, а также реплицированные с зарубежных источников,
+							современные исследования описаны максимально подробно. Разнообразный и богатый опыт
+							говорит нам, что убеждённость некоторых оппонентов обеспечивает актуальность модели
+							развития.
+						</p>
+						<ul class="list about-room__list">
+							<li class="about-room__item">
+								<div class="about-room__rect">
+									<img src="img/room-icon.svg" alt="icon" class="about-room__item-icon" />
+								</div>
+								<span class="about-room__item-content">4 гостя</span>
+							</li>
+							<li class="about-room__item">
+								<div class="about-room__rect">
+									<img src="img/room-icon.svg" alt="icon" class="about-room__item-icon" />
+								</div>
+								<span class="about-room__item-content">от 26 м² до 33 м²</span>
+							</li>
+							<li class="about-room__item">
+								<div class="about-room__rect">
+									<img src="img/room-icon.svg" alt="icon" class="about-room__item-icon" />
+								</div>
+								<span class="about-room__item-content">2 двуспальные кровати</span>
+							</li>
+						</ul>
+						<span class="about-room__price">от <span>10 000 руб. / </span> 1 ночь </span>
+					</div>
+					<div class="swiper room-slider">
+						<button class="btn slider-nav__btn slider-nav__btn--prev">
+							<svg class="slider-nav__arrow">
+								<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+							</svg>
+						</button>
+						<button class="btn slider-nav__btn slider-nav__btn--next">
+							<svg class="slider-nav__arrow">
+								<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+							</svg>
+						</button>
+						<div class="slider-pag"></div>
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<img src="img/room.webp" alt="room" class="room-slider__slide-img" />
+							</div>
+							<div class="swiper-slide">
+								<img src="img/room.webp" alt="room" class="room-slider__slide-img" />
+							</div>
+							<div class="swiper-slide">
+								<img src="img/room.webp" alt="room" class="room-slider__slide-img" />
+							</div>
+							<div class="swiper-slide">
+								<img src="img/room.webp" alt="room" class="room-slider__slide-img" />
+							</div>
+							<div class="swiper-slide">
+								<img src="img/room.webp" alt="room" class="room-slider__slide-img" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="room-services">
+			<div class="container">
+				<h2 class="title title-2 room-services__title">В номере STANDART</h2>
+				<ul class="list room-services__list">
+					<li class="room-services__item">
+						<div class="room-services__item-rect">
+							<img src="img/room-icon.svg" alt="icon" class="room-services__icon" />
+						</div>
+						<span class="room-services__content">Бесплатный wi-fi</span>
+					</li>
+					<li class="room-services__item">
+						<div class="room-services__item-rect">
+							<img src="img/room-icon.svg" alt="icon" class="room-services__icon" />
+						</div>
+						<span class="room-services__content">Принадлежности для приготовления чая</span>
+					</li>
+					<li class="room-services__item">
+						<div class="room-services__item-rect">
+							<img src="img/room-icon.svg" alt="icon" class="room-services__icon" />
+						</div>
+						<span class="room-services__content">Сейф в номере</span>
+					</li>
+					<li class="room-services__item">
+						<div class="room-services__item-rect">
+							<img src="img/room-icon.svg" alt="icon" class="room-services__icon" />
+						</div>
+						<span class="room-services__content">Бесплатный wi-fi</span>
+					</li>
+					<li class="room-services__item">
+						<div class="room-services__item-rect">
+							<img src="img/room-icon.svg" alt="icon" class="room-services__icon" />
+						</div>
+						<span class="room-services__content">Принадлежности для приготовления чая</span>
+					</li>
+					<li class="room-services__item">
+						<div class="room-services__item-rect">
+							<img src="img/room-icon.svg" alt="icon" class="room-services__icon" />
+						</div>
+						<span class="room-services__content">Сейф в номере</span>
+					</li>
+					<li class="room-services__item">
+						<div class="room-services__item-rect">
+							<img src="img/room-icon.svg" alt="icon" class="room-services__icon" />
+						</div>
+						<span class="room-services__content">Бесплатный wi-fi</span>
+					</li>
+					<li class="room-services__item">
+						<div class="room-services__item-rect">
+							<img src="img/room-icon.svg" alt="icon" class="room-services__icon" />
+						</div>
+						<span class="room-services__content">Принадлежности для приготовления чая</span>
+					</li>
+					<li class="room-services__item">
+						<div class="room-services__item-rect">
+							<img src="img/room-icon.svg" alt="icon" class="room-services__icon" />
+						</div>
+						<span class="room-services__content">Сейф в номере</span>
+					</li>
+					<li class="room-services__item">
+						<div class="room-services__item-rect">
+							<img src="img/room-icon.svg" alt="icon" class="room-services__icon" />
+						</div>
+						<span class="room-services__content">Бесплатный wi-fi</span>
+					</li>
+					<li class="room-services__item">
+						<div class="room-services__item-rect">
+							<img src="img/room-icon.svg" alt="icon" class="room-services__icon" />
+						</div>
+						<span class="room-services__content">Принадлежности для приготовления чая</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="services services--addition">
+			<div class="container">
+				<div class="section-head">
+					<h2 class="title title-2">Дополнительные услуги</h2>
+					<a href="#" class="btn-custom btn-custom--stroke">
+						<span>Все услуги</span>
+						<svg class="btn-custom__arrow">
+							<use xlink:href="img/icons/icons.svg#icon-arrow-line"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="services__body">
+					<a href="#" class="services__item services__item--big" style="background: url(&quot;img/service.webp&quot;) 0 0 / cover no-repeat">
+						<h5 class="services__item-title">Конференц-услуги</h5>
+					</a>
+					<a href="#" class="services__item" style="background: url(&quot;img/service.webp&quot;) 0 0 / cover no-repeat">
+						<h5 class="services__item-title">Мини-маркет</h5>
+					</a>
+					<a href="#" class="services__item" style="background: url(&quot;img/service.webp&quot;) 0 0 / cover no-repeat">
+						<h5 class="services__item-title">Фитнес-зал</h5>
+					</a>
+					<a href="#" class="services__item services__item services__item--middle" style="background: url(&quot;img/service.webp&quot;) 0 0 / cover no-repeat">
+						<h5 class="services__item-title">Ресторан</h5>
+					</a>
+					<a href="#" class="services__item" style="background: url(&quot;img/service.webp&quot;) 0 0 / cover no-repeat">
+						<h5 class="services__item-title">Конференц-услуги</h5>
+					</a>
+					<a href="#" class="services__item" style="background: url(&quot;img/service.webp&quot;) 0 0 / cover no-repeat">
+						<h5 class="services__item-title">Мини-маркет</h5>
+					</a>
+					<a href="#" class="services__item services__item--big" style="background: url(&quot;img/service.webp&quot;) 0 0 / cover no-repeat">
+						<h5 class="services__item-title">Фитнес-зал</h5>
+					</a>
+					<a href="#" class="services__item services__item services__item--middle" style="background: url(&quot;img/service.webp&quot;) 0 0 / cover no-repeat">
+						<h5 class="services__item-title">Ресторан</h5>
+					</a>
+				</div>
+				<a href="#" class="btn-custom btn-custom--stroke services__btn">
+					<span>Показать больше</span>
+					<svg class="btn-custom__arrow">
+						<use xlink:href='img/icons/icons.svg#icon-arrow-line'></use>
+					</svg>
+				</a>
+			</div>
+		</section>
+
+		<section class="other-rooms">
+			<div class="container">
+				<h2 class="title title-2 other-rooms__title">Другие номера</h2>
+				<div class="swiper other-rooms__slider">
+					<div class="swiper-wrapper">
+						<a href="#" class="swiper-slide other-rooms__slide">
+							<img src="img/room.webp" alt="image" class="other-rooms__slide-img" />
+							<h5 class="other-rooms__slide-title">Другие номера</h5>
+							<ul class="list other-rooms__list">
+								<li class="other-rooms__item">
+									<div class="other-rooms__item-rect">
+										<img src="img/room-icon.svg" alt="icon" class="other-rooms__item-icon" />
+									</div>
+									<span>4 гостя</span>
+								</li>
+								<li class="other-rooms__item">
+									<div class="other-rooms__item-rect">
+										<img src="img/room-icon.svg" alt="icon" class="other-rooms__item-icon" />
+									</div>
+									<span>от 26 м² до 33 м²</span>
+								</li>
+							</ul>
+							<div class="other-rooms__slide-btn">
+								<span>Подробнее</span>
+								<svg class="other-rooms__slide-arrow">
+									<use xlink:href="img/icons/icons.svg#icon-arrow-line"></use>
+								</svg>
+							</div>
+						</a>
+						<a href="#" class="swiper-slide other-rooms__slide">
+							<img src="img/room.webp" alt="image" class="other-rooms__slide-img" />
+							<h5 class="other-rooms__slide-title">Другие номера</h5>
+							<ul class="list other-rooms__list">
+								<li class="other-rooms__item">
+									<div class="other-rooms__item-rect">
+										<img src="img/room-icon.svg" alt="icon" class="other-rooms__item-icon" />
+									</div>
+									<span>4 гостя</span>
+								</li>
+								<li class="other-rooms__item">
+									<div class="other-rooms__item-rect">
+										<img src="img/room-icon.svg" alt="icon" class="other-rooms__item-icon" />
+									</div>
+									<span>от 26 м² до 33 м²</span>
+								</li>
+							</ul>
+							<div class="other-rooms__slide-btn">
+								<span>Подробнее</span>
+								<svg class="other-rooms__slide-arrow">
+									<use xlink:href="img/icons/icons.svg#icon-arrow-line"></use>
+								</svg>
+							</div>
+						</a>
+						<a href="#" class="swiper-slide other-rooms__slide">
+							<img src="img/room.webp" alt="image" class="other-rooms__slide-img" />
+							<h5 class="other-rooms__slide-title">Другие номера</h5>
+							<ul class="list other-rooms__list">
+								<li class="other-rooms__item">
+									<div class="other-rooms__item-rect">
+										<img src="img/room-icon.svg" alt="icon" class="other-rooms__item-icon" />
+									</div>
+									<span>4 гостя</span>
+								</li>
+								<li class="other-rooms__item">
+									<div class="other-rooms__item-rect">
+										<img src="img/room-icon.svg" alt="icon" class="other-rooms__item-icon" />
+									</div>
+									<span>от 26 м² до 33 м²</span>
+								</li>
+							</ul>
+							<div class="other-rooms__slide-btn">
+								<span>Подробнее</span>
+								<svg class="other-rooms__slide-arrow">
+									<use xlink:href="img/icons/icons.svg#icon-arrow-line"></use>
+								</svg>
+							</div>
+						</a>
+						<a href="#" class="swiper-slide other-rooms__slide">
+							<img src="img/room.webp" alt="image" class="other-rooms__slide-img" />
+							<h5 class="other-rooms__slide-title">Другие номера</h5>
+							<ul class="list other-rooms__list">
+								<li class="other-rooms__item">
+									<div class="other-rooms__item-rect">
+										<img src="img/room-icon.svg" alt="icon" class="other-rooms__item-icon" />
+									</div>
+									<span>4 гостя</span>
+								</li>
+								<li class="other-rooms__item">
+									<div class="other-rooms__item-rect">
+										<img src="img/room-icon.svg" alt="icon" class="other-rooms__item-icon" />
+									</div>
+									<span>от 26 м² до 33 м²</span>
+								</li>
+							</ul>
+							<div class="other-rooms__slide-btn">
+								<span>Подробнее</span>
+								<svg class="other-rooms__slide-arrow">
+									<use xlink:href="img/icons/icons.svg#icon-arrow-line"></use>
+								</svg>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="offers">
+			<div class="container">
+				<div class="section-head">
+					<h2 class="title title-2">СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ</h2>
+					<div class="slider-nav">
+						<button class="btn slider-nav__btn slider-nav__btn--prev">
+							<svg class="slider-nav__arrow">
+								<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+							</svg>
+						</button>
+						<button class="btn slider-nav__btn slider-nav__btn--next">
+							<svg class="slider-nav__arrow">
+								<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+				<div class="swiper offers__slider">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide offers__slide">
+							<img src="img/room.webp" alt="" class="offers__slide-img" />
+							<h5 class="offers__slide-title">Раннее бронирование в Munib Hotel</h5>
+							<a href="#" class="offers__slide-btn">
+								<span>Подробнее</span>
+								<svg class="offers__slide-arrow">
+									<use xlink:href='img/icons/icons.svg#icon-arrow-line'></use>
+								</svg>
+							</a>
+						</div>
+						<a href="#" class="swiper-slide offers__slide">
+							<img src="img/room.webp" alt="" class="offers__slide-img" />
+							<h5 class="offers__slide-title">Раннее бронирование в Munib Hotel</h5>
+							<div class="offers__slide-btn">
+								<span>Подробнее</span>
+								<svg class="offers__slide-arrow">
+									<use xlink:href='img/icons/icons.svg#icon-arrow-line'></use>
+								</svg>
+							</div>
+						</a>
+						<div class="swiper-slide offers__slide">
+							<img src="img/room.webp" alt="" class="offers__slide-img" />
+							<h5 class="offers__slide-title">Раннее бронирование в Munib Hotel</h5>
+							<a href="#" class="offers__slide-btn">
+								<span>Подробнее</span>
+								<svg class="offers__slide-arrow">
+									<use xlink:href='img/icons/icons.svg#icon-arrow-line'></use>
+								</svg>
+							</a>
+						</div>
+						<div class="swiper-slide offers__slide">
+							<img src="img/room.webp" alt="" class="offers__slide-img" />
+							<h5 class="offers__slide-title">Раннее бронирование в Munib Hotel</h5>
+							<a href="#" class="offers__slide-btn">
+								<span>Подробнее</span>
+								<svg class="offers__slide-arrow">
+									<use xlink:href='img/icons/icons.svg#icon-arrow-line'></use>
+								</svg>
+							</a>
+						</div>
+						<div class="swiper-slide offers__slide">
+							<img src="img/room.webp" alt="" class="offers__slide-img" />
+							<h5 class="offers__slide-title">Раннее бронирование в Munib Hotel</h5>
+							<a href="#" class="offers__slide-btn">
+								<span>Подробнее</span>
+								<svg class="offers__slide-arrow">
+									<use xlink:href='img/icons/icons.svg#icon-arrow-line'></use>
+								</svg>
+							</a>
+						</div>
+						<div class="swiper-slide offers__slide">
+							<img src="img/room.webp" alt="" class="offers__slide-img" />
+							<h5 class="offers__slide-title">Раннее бронирование в Munib Hotel</h5>
+							<a href="#" class="offers__slide-btn">
+								<span>Подробнее</span>
+								<svg class="offers__slide-arrow">
+									<use xlink:href='img/icons/icons.svg#icon-arrow-line'></use>
+								</svg>
+							</a>
+						</div>
+						<div class="swiper-slide offers__slide">
+							<img src="img/room.webp" alt="" class="offers__slide-img" />
+							<h5 class="offers__slide-title">Раннее бронирование в Munib Hotel</h5>
+							<a href="#" class="offers__slide-btn">
+								<span>Подробнее</span>
+								<svg class="offers__slide-arrow">
+									<use xlink:href='img/icons/icons.svg#icon-arrow-line'></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<nav class="footer__nav">
+				<div class="footer__item">
+					<h5 class="title footer__title">Номера</h5>
+					<ul class="list footer__list">
+						<li>
+							<a href="#">Grand deluxe</a>
+						</li>
+						<li>
+							<a href="#">Deluxe</a>
+						</li>
+						<li>
+							<a href="#">Comfort</a>
+						</li>
+						<li>
+							<a href="#">Standart</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__item">
+					<h5 class="title footer__title">Основная информация</h5>
+					<ul class="list footer__list">
+						<li>
+							<a href="#">Бронь номеров</a>
+						</li>
+						<li>
+							<a href="#">Конференц-зал</a>
+						</li>
+						<li>
+							<a href="#">Ресторан</a>
+						</li>
+						<li>
+							<a href="#">Реквизиты</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__main">
+					<a href="/" class="footer__logo">
+						<img src="img/logo-primary.svg" alt="logo" class="footer__logo-img" />
+					</a>
+					<p class="content footer__copyright">© 2024, ООО “Munib hotel”</p>
+					<p class="content">Все права защищены.</p>
+				</div>
+				<div class="footer__contacts">
+					<h5 class="title footer__title">Контактная информация</h5>
+					<div class="footer__contacts-body">
+						<div class="footer__contacts-info">
+							<a href="tel:+79179999999" class="footer__tel">+7 (917) 999-99-99</a>
+							<a href="mailto:info@domain.ru" class="footer__mail">info@domain.ru</a>
+							<p class="footer__contacts-content">г. Казань, ул. Пушкина, д. 14В</p>
+						</div>
+						<div class="footer__contacts-nav">
+							<a href="#" class="btn-custom btn-custom--stroke footer__contacts-btn">
+								<span>Забронировать</span>
+								<svg class="btn-custom__arrow">
+									<use xlink:href="img/icons/icons.svg#icon-arrow-line"></use>
+								</svg>
+							</a>
+							<ul class="list footer__social">
+								<li>
+									<a href="#" class="footer__social-btn">
+										<svg class="footer__social-icon">
+											<use xlink:href="img/icons/icons.svg#icon-vk"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="footer__social-btn">
+										<svg class="footer__social-icon">
+											<use xlink:href="img/icons/icons.svg#icon-wh"></use>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="footer__social-btn">
+										<svg class="footer__social-icon">
+											<use xlink:href="img/icons/icons.svg#icon-tg"></use>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+			<ul class="list footer__bottom-list">
+				<li class="footer__bottom-item">
+					<a href="#">Политика конфиденциальности</a>
+				</li>
+				<li class="footer__bottom-item">
+					<a href="#">Правила обработки персональных данных</a>
+				</li>
+				<li class="footer__bottom-item">
+					<span>Дизайн и разработка –</span>
+					<div class="footer__bottom-logo">
+						<img src="img/qorix.svg" alt="qorix" class="footer__bottom-logo-img" />
+					</div>
+				</li>
+			</ul>
+		</div>
+	</footer>
+
+	<script src="js/app.min.js?_v=20240923013442"></script>
+</body>
+
+</html>

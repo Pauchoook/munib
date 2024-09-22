@@ -13,6 +13,11 @@
   &__slider {
   }
   &__slide {
+    @include hover {
+      .offers__slide-arrow {
+        transform: translateX(5px);
+      }
+    }
   }
   &__slide-img {
     width: 100%;
@@ -50,11 +55,6 @@
     font-size: 15px;
     line-height: 147%;
     color: var(--primary);
-    @include hover {
-      .offers__slide-arrow {
-        transform: translateX(5px);
-      }
-    }
   }
   &__slide-arrow {
     width: 11px;

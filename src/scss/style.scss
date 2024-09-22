@@ -13,12 +13,15 @@
 @import "./ui/title";
 @import "./ui/dropdown";
 @import "./ui/content";
+@import "./ui/modal";
 
 // help
 @import "./help/scrollbar";
 @import "./help/slider-nav";
 @import "./help/slider-pag";
 @import "./help/section-head";
+@import "./help/room-slider";
+@import "./help/modal-detail";
 
 // components
 @import "./components/header";
@@ -29,5 +32,10 @@
 @import "./components/offers";
 @import "./components/services";
 @import "./components/map";
+@import "./components/about-room";
+@import "./components/room-services";
+@import "./components/other-rooms";
+@import "./components/service-catalog";
+@import "./components/reserva";
 
 @import "./components/footer";

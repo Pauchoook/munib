@@ -1,6 +1,9 @@
 .services {
   padding: 80px 0px;
-  background-color: var(--shell);
+  background-color: var(--vista);
+  &--addition {
+    background: rgba(249, 244, 240, 0.43);
+  }
   @include tablet {
     padding: 60px 0px;
   }
@@ -95,6 +98,19 @@
       font-size: 16px;
       left: 15px;
       right: 15px;
+    }
+  }
+  &__btn {
+    margin: 60px auto 0px auto;
+    width: fit-content;
+    border-color: var(--primary);
+    color: black;
+    @include hover {
+      background-color: var(--primary);
+      color: white;
+    }
+    @include mobile {
+      width: 100%;
     }
   }
 }

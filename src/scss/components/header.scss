@@ -166,6 +166,7 @@
   &__btn {
     @include laptop-min {
       border-color: black;
+      color: black;
       @include hover {
         background-color: black;
         color: white;

@@ -1,0 +1,82 @@
+.about-room {
+  padding: 170px 0px 70px 0px;
+  @include tablet {
+    padding: 60px 0px;
+  }
+  &__title {
+    margin-bottom: 40px;
+    @include tablet {
+      margin-bottom: 25px;
+    }
+  }
+  &__body {
+    display: flex;
+    gap: 50px;
+    row-gap: 30px;
+    @include laptop {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+  &__info {
+    flex: 1;
+  }
+  &__content {
+    margin-bottom: 40px;
+    @include tablet {
+      margin-bottom: 25px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-bottom: 60px;
+    @include tablet {
+      margin-bottom: 25px;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    @include tablet {
+      gap: 15px
+    }
+  }
+  &__rect {
+    @include flex-center;
+    width: 53px;
+    height: 53px;
+    background-color: var(--primary);
+    color: white;
+    @include tablet {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  &__item-content {
+    font-weight: 300;
+    font-size: 22px;
+    opacity: 0.83;
+    @include laptop {
+      font-size: 20px;
+    }
+    @include tablet {
+      font-size: 18px;
+    }
+  }
+  &__price {
+    font-size: 18px;
+    font-family: "ViaodaLibre", sans-serif;
+    span {
+      font-size: 40px;
+    }
+    @include tablet {
+      font-size: 16px;
+      span {
+        font-size: 32px;
+      }
+    }
+  }
+}
