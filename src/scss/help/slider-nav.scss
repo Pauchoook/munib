@@ -1,0 +1,38 @@
+.slider-nav {
+  display: flex;
+  gap: 28px;
+  @include tablet {
+    gap: 20px;
+  }
+  &__btn {
+    @include flex-center;
+    width: 55px;
+    height: 55px;
+    color: white;
+    background: rgba(0, 0, 0, 0.25);
+    top: calc(50% - 27px);
+    transition: transform .2s ease;
+    z-index: 10;
+    @include hover {
+      transform: scale(1.13);
+    }
+    &--prev {
+      .slider-nav__arrow {
+        transform: rotate(90deg);
+      }
+    }
+    &--next {
+      .slider-nav__arrow {
+        transform: rotate(-90deg);
+      }
+    }
+    @include tablet {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  &__arrow {
+    width: 15px;
+    height: 9px;
+  }
+}

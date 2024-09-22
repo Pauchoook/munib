@@ -1,0 +1,29 @@
+.slider-pag {
+  @include flex-center;
+  position: absolute;
+  gap: 20px;
+  left: 0;
+  right: 0;
+  bottom: 25px;
+  z-index: 10;
+  @include tablet {
+    gap: 10px;
+    bottom: 15px;
+  }
+  .swiper-pagination-bullet {
+    display: block;
+    cursor: pointer;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid white;
+    transition: background-color 0.2s ease;
+    &.swiper-pagination-bullet-active {
+      background-color: transparent;
+    }
+    @include hover {
+      background-color: transparent;
+    }
+  }
+}

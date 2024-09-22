@@ -1,0 +1,9 @@
+.section-head {
+  @include flex-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 40px;
+  @include tablet {
+    margin-bottom: 25px;
+  }
+}

@@ -1,0 +1,33 @@
+@import "./fonts/fonts";
+@import "./base/normalize";
+@import "./base/vars";
+@import "./base/templates";
+@import "./base/settings";
+@import "./base/media";
+@import "./base/body-config";
+@import "./base/config-container";
+
+// ui
+@import "./ui/button";
+@import "./ui/list";
+@import "./ui/title";
+@import "./ui/dropdown";
+@import "./ui/content";
+
+// help
+@import "./help/scrollbar";
+@import "./help/slider-nav";
+@import "./help/slider-pag";
+@import "./help/section-head";
+
+// components
+@import "./components/header";
+
+@import "./components/hero";
+@import "./components/about";
+@import "./components/our-rooms";
+@import "./components/offers";
+@import "./components/services";
+@import "./components/map";
+
+@import "./components/footer";

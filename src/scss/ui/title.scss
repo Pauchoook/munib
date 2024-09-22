@@ -1,0 +1,39 @@
+.title {
+  font-weight: 400;
+  font-family: "ViaodaLibre", sans-serif;
+  margin: 0;
+  text-transform: uppercase;
+}
+.title-1 {
+  font-size: 65px;
+  @include desktop-min {
+    font-size: 58px;
+  }
+  @include laptop {
+    font-size: 48px;
+  }
+  @include laptop-min {
+    font-size: 44px;
+  }
+  @include tablet {
+    font-size: 38px;
+  }
+  @include mobile {
+    font-size: 32px;
+  }
+}
+.title-2 {
+  font-size: 45px;
+  @include laptop {
+    font-size: 42px;
+  }
+  @include laptop-min {
+    font-size: 36px;
+  }
+  @include tablet {
+    font-size: 32px;
+  }
+  @include mobile {
+    font-size: 28px;
+  }
+}

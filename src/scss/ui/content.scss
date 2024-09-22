@@ -1,0 +1,9 @@
+.content {
+  font-size: 15px;
+  line-height: 213%;
+  opacity: 0.53;
+  margin: 0;
+  @include tablet {
+    line-height: 140%;
+  }
+}
