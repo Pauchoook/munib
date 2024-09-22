@@ -2142,7 +2142,8 @@ body {
     row-gap: 25px
   }
   .modal-detail__footer {
-    gap: 25px
+    gap: 25px;
+    padding: 30px
   }
   .modal-detail__price {
     font-size: 22px

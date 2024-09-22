@@ -70,6 +70,7 @@
     padding: 33px 45px;
     @include tablet {
       gap: 25px;
+      padding: 30px;
     }
   }
   &__price {
