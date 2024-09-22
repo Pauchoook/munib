@@ -47,7 +47,7 @@
     align-items: start;
     flex-wrap: wrap;
     justify-content: start;
-    gap: 25px;
+    gap: 18px;
     row-gap: 15px;
     margin-bottom: 15px;
     flex: 1;
@@ -58,10 +58,10 @@
   &__item {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
     font-weight: 300;
     font-size: 13px;
-    flex: 0 1 calc(50% - 13px);
+    flex: 0 1 calc(50% - 9px);
     @include tablet {
       flex-basis: auto;
       min-width: 105px;

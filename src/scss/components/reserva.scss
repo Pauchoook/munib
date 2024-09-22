@@ -14,11 +14,13 @@
     @include laptop {
       flex-direction: column;
       gap: 30px;
+      padding-bottom: 50px;
       &:not(:last-child) {
         margin-bottom: 60px;
       }
     }
     @include tablet {
+      padding-bottom: 40px;
       &:not(:last-child) {
         margin-bottom: 50px;
       }

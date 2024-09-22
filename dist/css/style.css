@@ -1252,7 +1252,7 @@ body {
   align-items: start;
   flex-wrap: wrap;
   justify-content: start;
-  gap: 25px;
+  gap: 18px;
   row-gap: 15px;
   margin-bottom: 15px;
   flex: 1
@@ -1260,10 +1260,10 @@ body {
 .other-rooms__item {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 12px;
   font-weight: 300;
   font-size: 13px;
-  flex: 0 1 calc(50% - 13px)
+  flex: 0 1 calc(50% - 9px)
 }
 .other-rooms__item span {
   opacity: .83
@@ -1921,7 +1921,8 @@ body {
   }
   .reserva__item {
     flex-direction: column;
-    gap: 30px
+    gap: 30px;
+    padding-bottom: 50px
   }
   .reserva__item:not(:last-child) {
     margin-bottom: 60px
@@ -2276,6 +2277,9 @@ body {
   }
   .reserva {
     padding: 80px 0 60px 0
+  }
+  .reserva__item {
+    padding-bottom: 40px
   }
   .reserva__item:not(:last-child) {
     margin-bottom: 50px
