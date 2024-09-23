@@ -7,6 +7,7 @@ import reserva from "./files/reserva.js";
 import slider from "./files/slider.js";
 import map from "./files/map.js";
 import modal from "./files/modal.js";
+import initOrder from "./files/initOrder.js";
 
 slider();
 functions.isWebp();
@@ -16,3 +17,4 @@ burger();
 reserva();
 map();
 modal();
+initOrder();

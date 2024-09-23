@@ -1,0 +1,51 @@
+<section class="order">
+  <div class="container">
+    <form action="#" class="form order__from">
+      <label for="date-llegada-main" class="form__label">
+        <span class="form__label-title">Дата заезда</span>
+        <span class="form__label-value"></span>
+        <input type="date" id="date-llegada-main" class="form__input-date form__el-change" />
+      </label>
+      <label for="date-salida-main" class="form__label">
+        <span class="form__label-title">Дата выезда</span>
+        <span class="form__label-value"></span>
+        <input type="date" id="date-salida-main" class="form__input-date form__el-change" />
+      </label>
+      <label for="date-guests-main" class="form__label">
+        <span class="form__label-title">Количество проживающих</span>
+        <input type="number" id="date-guests-main" value="2" class="form__input form__label-value" />
+      </label>
+      <label for="category" class="form__label">
+        <span class="form__label-title">Категория</span>
+        <span class="form__label-value">Комфорт</span>
+        <select name="category" id="category" class="form__select form__el-change">
+          <option value="Трололо1" selected>Трололо1</option>
+          <option value="Трололо2">Трололо2</option>
+          <option value="Трололо3">Трололо3</option>
+        </select>
+      </label>
+      <label for="name" class="form__label">
+        <span class="form__label-title">Количество проживающих</span>
+        <input type="text" id="name" placeholder="Ф.И.О" class="form__input" />
+      </label>
+      <label for="email" class="form__label">
+        <span class="form__label-title">Количество проживающих</span>
+        <input type="email" id="email" placeholder="Ваш E-mail" class="form__input" />
+      </label>
+      <label for="message" class="form__label">
+        <span class="form__label-title">Комментарий к бронированию</span>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Сообщение к бронированию"
+          class="form__input form__input--textarea"
+        ></textarea>
+      </label>
+      <input type="checkbox" id="policy" checked class="form__input-policy" />
+      <label for="policy" class="form__policy"
+        >Согласен с <a href="#">пользовательским соглашением</a></label
+      >
+      <button class="btn btn-custom btn-custom--primary form__btn">Отправить</button>
+    </form>
+  </div>
+</section>

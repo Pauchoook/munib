@@ -334,6 +334,7 @@
         let url = "";
         const months = [ "янв", "фев", "мар", "апр", "мая", "июня", "июля", "авг", "сен", "окт", "нояб", "дек" ];
         if (inputLegada) {
+            console.log(inputLegada);
             const currentDate = new Date;
             const nextDate = new Date((new Date).setDate(currentDate.getDate() + 2));
             const currentYear = currentDate.getFullYear();
@@ -362,14 +363,14 @@
                 const currentDate = new Date(inputLegada.value);
                 initValue(currentDate.getDate(), currentDate.getMonth(), nextDate.getDate(), nextDate.getMonth());
             }));
-        }
-        function initValue(leggadaDay, leggadaMonth, salidaDay, salidaMonth) {
-            valueLlegada.innerHTML = `${leggadaDay}<span>/${months[leggadaMonth]}</span>`;
-            valueSalida.innerHTML = `${salidaDay}<span>/${months[salidaMonth]}</span>`;
-        }
-        function initUrl(leggada, salida, guests) {
-            const url = `?leggada=${leggada}&salida=${salida}&guests=${guests}`;
-            return url;
+            function initValue(leggadaDay, leggadaMonth, salidaDay, salidaMonth) {
+                valueLlegada.innerHTML = `${leggadaDay}<span>/${months[leggadaMonth]}</span>`;
+                valueSalida.innerHTML = `${salidaDay}<span>/${months[salidaMonth]}</span>`;
+            }
+            function initUrl(leggada, salida, guests) {
+                const url = `?leggada=${leggada}&salida=${salida}&guests=${guests}`;
+                return url;
+            }
         }
     }
     function ssr_window_esm_isObject(obj) {
@@ -4689,6 +4690,23 @@
             return document.removeEventListener("click", handleCloseModal);
         }
     }
+    function initOrder() {
+        const inputLegada = document.querySelector("#date-llegada-main");
+        const inputSalida = document.querySelector("#date-salida-main");
+        const inputGuests = document.querySelector("#date-guests-main");
+        const legadaValue = inputLegada.closest(".form__label").querySelector(".form__label-value");
+        const salidaValue = inputSalida.closest(".form__label").querySelector(".form__label-value");
+        if (inputLegada) {
+            const [legada, salida, guests] = window.location.search.replace("?", "").split("&").reduce(((acc, value) => acc = [ ...acc, value.split("=")[1] ]), []);
+            inputLegada.value = legada;
+            legadaValue.textContent = inputLegada.value;
+            inputSalida.value = salida;
+            salidaValue.textContent = inputSalida.value;
+            inputGuests.value = guests;
+            inputLegada.addEventListener("change", (e => legadaValue.textContent = e.target.value));
+            inputSalida.addEventListener("change", (e => salidaValue.textContent = e.target.value));
+        }
+    }
     slider();
     isWebp();
     mediaAdaptive();
@@ -4697,4 +4715,5 @@
     reserva();
     map();
     modal();
+    initOrder();
 })();

@@ -24,6 +24,7 @@ export default function reserva() {
   ];
 
   if (inputLegada) {
+    console.log(inputLegada)
     const currentDate = new Date();
     const nextDate = new Date(new Date().setDate(currentDate.getDate() + 2));
 
@@ -67,15 +68,16 @@ export default function reserva() {
       const currentDate = new Date(inputLegada.value);
       initValue(currentDate.getDate(), currentDate.getMonth(), nextDate.getDate(), nextDate.getMonth());
     });
+
+    function initValue(leggadaDay, leggadaMonth, salidaDay, salidaMonth) {
+      valueLlegada.innerHTML = `${leggadaDay}<span>/${months[leggadaMonth]}</span>`;
+      valueSalida.innerHTML = `${salidaDay}<span>/${months[salidaMonth]}</span>`;
+    }
+  
+    function initUrl(leggada, salida, guests) {
+      const url = `?leggada=${leggada}&salida=${salida}&guests=${guests}`;
+      return url;
+    }
   }
 
-  function initValue(leggadaDay, leggadaMonth, salidaDay, salidaMonth) {
-    valueLlegada.innerHTML = `${leggadaDay}<span>/${months[leggadaMonth]}</span>`;
-    valueSalida.innerHTML = `${salidaDay}<span>/${months[salidaMonth]}</span>`;
-  }
-
-  function initUrl(leggada, salida, guests) {
-    const url = `?leggada=${leggada}&salida=${salida}&guests=${guests}`;
-    return url;
-  }
 }
